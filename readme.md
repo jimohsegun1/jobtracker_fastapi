@@ -6,9 +6,17 @@
     - http://127.0.0.1:8000
     - http://127.0.0.1:8000/docs  ← Swagger UI
 
-
-
 `uvicorn main:app --reload`
 
 - `main:app` → `main.py` and `app` inside it.
 - `--reload` → Enables hot reloading during development.
+
+### File structure: FastAPI basic CRUD (no DB yet, in-memory)
+```
+job_tracker/
+│
+├── main.py               ← FastAPI app
+├── models.py             ← Pydantic models
+├── fake_db.py            ← Temporary "database"
+└── requirements.txt
+```
